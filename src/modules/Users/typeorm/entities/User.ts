@@ -3,22 +3,22 @@ import { Column, Entity, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateCol
 @Entity('users')
 class User {
     @PrimaryGeneratedColumn('increment')
-    id: number
+    id: number;
 
     @Column()
-    name: string
+    name: string;
 
     @Column()
-    age: number
+    age: number;
 
     @Column()
-    document: string
+    document: string;
 
     @Column()
-    password: string
+    password: string;
 
     @Column()
-    phone: string
+    phone: string;
 
     @CreateDateColumn()
     created_at: string

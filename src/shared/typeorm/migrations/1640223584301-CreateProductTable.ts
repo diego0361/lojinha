@@ -8,7 +8,7 @@ export class CreateProductTable1640223584301 implements MigrationInterface {
         columns: [
           {
             name: "id",
-            type: "bigseiral",
+            type: "bigserial",
             isPrimary: true,
             generationStrategy: "increment",
           },
@@ -18,7 +18,7 @@ export class CreateProductTable1640223584301 implements MigrationInterface {
           },
           {
             name: 'shelf_life',
-            type: 'boolean',
+            type: 'varchar',
             default: false
           },
           {
@@ -34,7 +34,17 @@ export class CreateProductTable1640223584301 implements MigrationInterface {
           {
             name: 'stock',
             type: 'integer'
-          }
+          },
+          {
+            name: "created_at",
+            type: "timestamp",
+            default: "now()",
+          },
+          {
+            name: "update_at",
+            type: "timestamp",
+            default: "now()",
+          },
         ],
       })
     );

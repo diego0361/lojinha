@@ -8,6 +8,7 @@
     "outDir": "dist",
     "strict": true,
     "noImplicitAny": true,
+    "strictPropertyInitialization": false,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "noImplicitThis": true,

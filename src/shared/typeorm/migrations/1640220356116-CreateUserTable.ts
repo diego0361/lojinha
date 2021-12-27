@@ -18,7 +18,7 @@ export class CreateUserTable1640220356116 implements MigrationInterface {
           },
           {
             name: "age",
-            type: "number",
+            type: "integer",
           },
           {
             name: "document",
