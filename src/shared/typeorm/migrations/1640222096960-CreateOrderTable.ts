@@ -8,7 +8,7 @@ export class CreateOrderTable1640222096960 implements MigrationInterface {
         columns: [
           {
             name: "id",
-            type: "bigseiral",
+            type: "bigserial",
             isPrimary: true,
             generationStrategy: "increment",
           },
