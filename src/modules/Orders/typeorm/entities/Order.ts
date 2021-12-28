@@ -1,30 +1,36 @@
 import {
   Column,
+  CreateDateColumn,
   Entity,
   PrimaryGeneratedColumn,
-  CreateDateColumn,
   UpdateDateColumn,
 } from "typeorm";
 
-@Entity("users")
-class User {
+@Entity("orders")
+class Order {
   @PrimaryGeneratedColumn("increment")
   id: number;
 
   @Column()
-  name: string;
+  id_user: string;
 
   @Column()
-  age: number;
+  id_products: string;
 
   @Column()
-  document: string;
+  paynament_type: string;
 
   @Column()
-  password: string;
+  paynament_status: string;
 
   @Column()
-  phone: string;
+  quantity: number;
+
+  @Column()
+  total_price: number;
+
+  @Column()
+  fiscal_note: string;
 
   @CreateDateColumn()
   created_at: string;
@@ -32,4 +38,4 @@ class User {
   @UpdateDateColumn()
   update_at: string;
 }
-export default User;
+export default Order;

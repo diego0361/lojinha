@@ -13,27 +13,27 @@ export class CreateProductTable1640223584301 implements MigrationInterface {
             generationStrategy: "increment",
           },
           {
-            name: 'name',
-            type: 'varchar'
+            name: "name",
+            type: "varchar",
           },
           {
-            name: 'shelf_life',
-            type: 'varchar',
-            default: false
+            name: "shelf_life",
+            type: "varchar",
+            default: false,
           },
           {
-            name: 'price',
+            name: "price",
             type: "decimal",
             precision: 10,
             scale: 2,
           },
           {
-            name: 'brand',
-            type: 'varchar'
+            name: "brand",
+            type: "varchar",
           },
           {
-            name: 'stock',
-            type: 'integer'
+            name: "stock",
+            type: "integer",
           },
           {
             name: "created_at",
@@ -51,6 +51,6 @@ export class CreateProductTable1640223584301 implements MigrationInterface {
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
-      await queryRunner.dropTable('products')
+    await queryRunner.dropTable("products");
   }
 }
