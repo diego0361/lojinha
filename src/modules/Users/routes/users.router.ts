@@ -5,10 +5,10 @@ const routes = Router();
 
 const usersController = new UsersController();
 
-routes.get('/', usersController.index);
-routes.post('/', usersController.create);
-routes.put('/:id', usersController.update);
-routes.get('/:id', usersController.show);
-routes.delete('/:id', usersController.delete);
+routes.get("/", usersController.index);
+routes.post("/", usersController.create);
+routes.put("/:id", usersController.update);
+routes.get("/:id", usersController.show);
+routes.delete("/:id", usersController.delete);
 
-export default routes
+export default routes;
